@@ -3,5 +3,6 @@ EXPOSE 8001
 VOLUME /usr/src/app
 WORKDIR /usr/src/app
 ADD package.json /usr/src/app/package.json
+ADD server.js /usr/src/app/server.js
 RUN npm install
 CMD [ "npm", "start" ]
